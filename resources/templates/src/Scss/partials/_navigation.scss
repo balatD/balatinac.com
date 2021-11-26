@@ -1,9 +1,23 @@
 .navigation-subpage {
+    margin-bottom: 1.75rem;
+
     h1.navigation-subpage-header {
         font-size: 3.75rem;
         font-weight: 500;
         margin-top: 0;
         color: $color-offset-white;
+
+        span {
+            font-size: 20px;
+            text-transform: none;
+            color: #aab2bd;
+            font-weight: 400;
+        }
+
+        @media only screen and (max-width: 612px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .navigation-subpage-link {

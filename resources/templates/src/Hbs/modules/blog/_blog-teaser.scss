@@ -3,7 +3,7 @@
     padding: 1.25rem;
     border-radius: 0.5rem;
     width: 29.063rem;
-    height: 26.875rem;
+    height: 100%;
 
     .blog-teaser {
         text-decoration: none;
@@ -74,6 +74,10 @@
             .blog-teaser-tech-stack {
                 opacity: 1;
                 transition: opacity 0.5s ease-in;
+            }
+
+            .blog-teaser-image {
+
             }
         }
     }
