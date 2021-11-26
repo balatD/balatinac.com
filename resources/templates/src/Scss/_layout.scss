@@ -1,0 +1,32 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: 100vh;
+
+}
+
+body, html {
+    background-color: #222831;
+    font-family: $font-karla;
+}
+
+.subpage-content {
+    color: $color-offset-white;
+}
+
+.blog-content {
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    @media only screen and (max-width: 680px) {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    @media only screen and (min-width: 680px) and (max-width: 1810px) {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}

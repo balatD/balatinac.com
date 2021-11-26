@@ -1,0 +1,217 @@
+.b-card-wrapper {
+    display: block;
+    width: 100%;
+
+    .b-card-container {
+        position: relative;
+        margin-top: 7rem;
+        display: flex;
+        justify-content: center;
+
+        > .front,
+        > .back {
+            display: block;
+            transition-duration: 1s;
+            transition-property: transform, opacity;
+        }
+
+        > .front {
+            transform: rotateY(0deg);
+        }
+
+        > .back {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+            transform: rotateY(-180deg);
+        }
+
+        &.flip-toggle {
+            > .front {
+                transform: rotateY(180deg);
+                pointer-events: none;
+            }
+            > .back {
+                opacity: 1;
+                transform: rotateY(0deg);
+                pointer-events: auto;
+            }
+        }
+    }
+
+    .b-card {
+        background-color: #eeeeee;
+        height: 21.375rem;
+        width: 37.5rem;
+        border-radius: 0.5rem;
+        padding: 1.25rem;
+
+        @media only screen and (max-width: 680px) {
+            width: 80%;
+        }
+
+        .name {
+            margin: 0;
+            font-family: "Rubik";
+            text-transform: uppercase;
+            font-style: normal;
+            font-size: 2.688rem;
+            font-weight: 400;
+        }
+
+        .job-description {
+            margin: 0;
+            color: $color-offset-black;
+        }
+
+        .b-card-decoration {
+            height: 1.375rem;
+            background-color: $color-primary;
+            margin-top: 0.625rem;
+            margin-left: -1.25rem;
+            margin-right: -1.25rem;
+        }
+
+        .b-card-navigation {
+            position: absolute;
+            bottom: 0;
+            nav {
+                ul {
+                    display: flex;
+                    padding: 0;
+                    gap: 1.25rem;
+
+                    li {
+                        list-style: none;
+                        a {
+                            text-decoration: none;
+                            color: #00000099;
+                            text-transform: uppercase;
+                            font-size: 0.813rem;
+
+                            &.soon {
+                                text-decoration: line-through;
+                            }
+
+                            &:hover {
+                                color: $color-black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .b-card-additional-info {
+            h3 {
+                font-family: 'Shadows Into Light', cursive;
+                font-size: 2.875rem;
+                transform: rotate(349deg);
+                color: $color-ink-red;
+
+                @media only screen and (max-width: 485px) {
+                    font-size: 2.25rem;
+                    margin: 1.25rem;
+                }
+
+            }
+        }
+    }
+
+    .b-card.hide {
+        display: none;
+    }
+
+    .back {
+        .b-card-decoration {
+            margin-top: 5rem;
+        }
+    }
+
+    .b-card-description {
+        width: 60%;
+
+        @media only screen and (max-width: 680px) {
+            width: 100%;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 0.813rem;
+            color: $color-grey;
+        }
+
+        .link a {
+            text-decoration: none;
+            color: $color-black;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .link {
+            position: relative;
+        }
+
+        .link svg {
+            fill: none;
+            stroke: #70aec9;
+            stroke-width: 2;
+            stroke-miterlimit: 10;
+            stroke-dasharray: 338;
+            stroke-dashoffset: 338;
+            stroke-linecap: round;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: calc(100% + 3.75rem);
+            opacity: 0;
+            transform: translate(-50%, -50%);
+            transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .link svg {
+            stroke: $color-ink-red;
+        }
+
+        .link.active svg,
+        .link:hover svg {
+            stroke-dashoffset: 0;
+            opacity: 1;
+            transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+
+    }
+
+    .b-card-tech-stack {
+        display: flex;
+        gap: 0.625rem;
+        position: absolute;
+        bottom: 1.25rem;
+
+
+        .tech-item {
+            width: 1.688rem;
+            height: 1.688rem;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 1.688rem;
+                height: 1.688rem;
+            }
+        }
+    }
+
+    .b-card-help {
+        text-align: center;
+        margin-top: 0.625rem;
+        color: lighten($color-secondary, 40%);
+        cursor: pointer;
+
+        &:hover {
+            color: lighten($color-secondary, 80%);
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.hyphenate,
+.hyphenate * {
+    hyphens: manual;
+    -ms-hyphens: manual;
+    -moz-hyphens: manual;
+    -webkit-hyphens: manual;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: $font-rubik;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: $font-rubik;
+}
+
+h3 {
+    font-family: $font-karla;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-family: $font-karla;
+}
+
+h5 {
+    font-family: $font-karla;
+}
+
+h6 {
+    font-family: $font-karla;
+}
+
+p {
+    font-family: $font-karla;
+}
+
+.subpage-content h1 {
+    font-size: 30px;
+}
+
+.subpage-content a {
+    color: $color-primary;
+    text-decoration: none;
+}

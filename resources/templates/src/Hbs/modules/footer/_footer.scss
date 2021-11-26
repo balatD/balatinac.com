@@ -1,0 +1,39 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    padding-left: 0.625rem;
+    padding-right: 1.25rem;
+    right: 0;
+
+    @media only screen and (max-height: 830px) {
+        position: relative;
+        padding-right: 0.625rem;
+    }
+
+    .footer-navigation {
+        nav {
+            ul {
+                display: flex;
+                gap: 0.5rem;
+                justify-content: flex-end;
+            }
+
+            li {
+                list-style: none;
+                color: #eeeeee;
+                font-size: 0.813rem;
+            }
+
+            a {
+                font-size: 0.813rem;
+                text-decoration: none;
+                color: #eeeeee;
+            }
+        }
+    }
+}
+
+.blog footer {
+    position: relative;
+    padding-bottom: 0.625rem;
+}

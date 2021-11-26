@@ -1,0 +1,22 @@
+.blog-teaser-container {
+    margin-bottom: 3.125rem;
+
+    &-teasers {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3.75rem;
+    }
+
+    &-loadmore {
+        text-decoration: none;
+        color: #aab2bd;
+        display: block;
+        font-family: $font-karla;
+        padding-top: 1.875rem;
+        margin-bottom: 1.25rem;
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+}

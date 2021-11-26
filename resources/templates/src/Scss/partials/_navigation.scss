@@ -1,0 +1,24 @@
+.navigation-subpage {
+    h1.navigation-subpage-header {
+        font-size: 3.75rem;
+        font-weight: 500;
+        margin-top: 0;
+        color: $color-offset-white;
+    }
+
+    .navigation-subpage-link {
+        color: #aab2bd;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+
+        img {
+            height: 0.938rem;
+        }
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+}

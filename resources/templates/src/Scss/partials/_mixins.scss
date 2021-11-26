@@ -1,0 +1,11 @@
+// Calculate REM with px fallback
+$rem-base-font: 16px !default;
+
+@mixin font-rem($font-size, $line-height: 0) {
+    font-size: $font-size;
+    font-size: ($font-size / $rem-base-font) * 1rem;
+    @if ($line-height > 0) {
+        line-height: $line-height;
+        line-height: ($line-height / $rem-base-font) * 1rem;
+    }
+}
