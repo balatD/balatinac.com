@@ -1,0 +1,11 @@
+.swiper {
+    --swiper-theme-color: #ffd369;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 50px;
+}
+
+.swiper-slide-caption {
+    color: $color-grey;
+    padding-left: 25px;
+}

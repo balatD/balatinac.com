@@ -43,7 +43,10 @@ let babelEsConfig = {
 
 let bundleJsConfig = {
   // Add path/file to include to bundle
-  srcs: [],
+  srcs: [
+    './node_modules/prismjs/prism.js',
+    './node_modules/swiper/swiper-bundle.js',
+  ],
   concat: 'bundle.js',
   dest: `${paths.dest}/JavaScript`
 };

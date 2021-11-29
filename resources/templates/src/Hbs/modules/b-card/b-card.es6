@@ -7,8 +7,10 @@ class BCard {
     let toggleButton = document.querySelector('.b-card-help span');
     let bCard = document.querySelector('.b-card-container');
 
-    toggleButton.onclick = function () {
-      bCard.classList.toggle('flip-toggle');
-    };
+    if (toggleButton !== undefined && toggleButton !== null) {
+      toggleButton.onclick = function () {
+        bCard.classList.toggle('flip-toggle');
+      };
+    }
   }
 }

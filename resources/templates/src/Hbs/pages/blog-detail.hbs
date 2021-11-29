@@ -1,12 +1,58 @@
 {{#> layouts/base title="blog // Dragan Balatinac" home="false" class="blog-detail"}}
     {{#*inline "content-block"}}
-        <div class="blog-detail-content">
-        </div>
-        <div class="blog-related-container">
+        <div class="blog-detail-background" style="--blog-detail-image: url('https://picsum.photos/1920/1080');"></div>
+
+        <div class="blog-detail-wrapper">
+            <div class="blog-detail-navigation">
+                <a href="/blog.html" class="blog-detail-navigation-link"><img src="Images/svg/left-arrow-back-svgrepo-com.svg"
+                                                                              alt="">back to blog overview</a>
+            </div>
+
+            <div class="blog-detail-container">
+                {{> blog-intro/blog-intro }}
+                <div class="blog-detail-decoration"></div>
+
+                <div class="blog-detail-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis earum esse, ipsa itaque
+                        molestiae nesciunt nobis non nulla perferendis quidem repellat temporibus, voluptas. At perspiciatis,
+                        quam. Aut autem dolorem doloremque, ducimus enim facilis hic inventore libero nihil non perferendis
+                        provident quae quas qui, quisquam ratione, reiciendis sapiente sit vero!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis earum esse, ipsa itaque
+                        molestiae nesciunt nobis non nulla perferendis quidem repellat temporibus, voluptas. At perspiciatis,
+                        quam. Aut autem dolorem doloremque, ducimus enim facilis hic inventore libero nihil non perferendis
+                        provident quae quas qui, quisquam ratione, reiciendis sapiente sit vero!</p>
+                    {{> image-element/image-element }}
+                    <h2>Subheader 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis earum esse, ipsa itaque
+                        molestiae <strong>nesciunt</strong> nobis non nulla perferendis quidem repellat temporibus, voluptas. At perspiciatis,
+                        quam. Aut autem dolorem doloremque, ducimus enim facilis hic inventore libero nihil non perferendis
+                        provident quae quas qui, quisquam ratione, reiciendis sapiente sit vero!</p>
+
+                    <ul>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                    </ul>
+
+                    {{> code-highlight/code-highlight }}
+
+                    <h2>Subheader 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis earum esse, ipsa itaque
+                        molestiae <strong>nesciunt</strong> nobis non nulla perferendis quidem repellat temporibus, voluptas. At perspiciatis,
+                        quam. Aut autem dolorem doloremque, ducimus enim facilis hic inventore libero nihil non perferendis
+                        provident quae quas qui, quisquam ratione, reiciendis sapiente sit vero!</p>
+                    {{> image-slider/image-slider }}
+                </div>
+            </div>
+
+            <div class="blog-related-container">
+                <h4>Related Blog Posts</h4>
+            </div>
         </div>
     {{/inline}}
 
     {{#*inline "footer-block"}}
-        {{> footer/footer }}
     {{/inline}}
 {{/layouts/base}}

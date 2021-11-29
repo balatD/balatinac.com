@@ -36,3 +36,19 @@
         }
     }
 }
+
+.blog-detail-navigation {
+    margin-bottom: 1.75rem;
+
+    &-link {
+        color: $color-white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+
+        img {
+            height: 0.938rem;
+        }
+    }
+}

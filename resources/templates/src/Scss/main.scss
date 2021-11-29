@@ -1,6 +1,7 @@
 :root {
     --category-color: pink;
 }
+
 // Config
 @import './reset';
 @import './variables';
@@ -8,7 +9,12 @@
 @import './layout';
 @import './partials/mixins';
 @import './partials/typography';
+@import './partials/prism-overwrites';
 @import './partials/navigation';
+
+// Vendor
+@import "../../node_modules/prismjs/themes/prism-tomorrow";
+@import '../../node_modules/swiper/swiper-bundle.min';
 
 // Modules
 @import '../Hbs/modules/b-card/b-card';
@@ -16,5 +22,8 @@
 @import '../Hbs/modules/coming-soon-teaser/coming-soon-teaser';
 @import '../Hbs/modules/blog/blog-teaser-container';
 @import '../Hbs/modules/blog/blog-teaser';
+@import '../Hbs/modules/blog-intro/blog-intro';
+@import '../Hbs/modules/image-element/image-element';
+@import '../Hbs/modules/image-slider/image-slider';
 
 

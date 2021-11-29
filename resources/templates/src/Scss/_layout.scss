@@ -14,20 +14,73 @@ body, html {
     color: $color-offset-white;
 }
 
-.blog-content {
-    margin-right: 20%;
-    margin-left: 20%;
-    margin-top: 80px;
-    margin-bottom: 80px;
+.blog {
+    &-content {
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
 
-    @media only screen and (max-width: 680px) {
-        margin-right: 5%;
-        margin-left: 5%;
+        @media only screen and (max-width: 680px) {
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+
+        @media only screen and (min-width: 680px) and (max-width: 1810px) {
+            margin-right: 10%;
+            margin-left: 10%;
+        }
     }
 
-    @media only screen and (min-width: 680px) and (max-width: 1810px) {
-        margin-right: 10%;
-        margin-left: 10%;
+    &-detail-container {
+        background: $color-offset-white;
+        border-radius: 0.5rem;
+        padding-left: 3.125rem;
+        padding-right: 3.125rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    &-detail-wrapper {
+        position: relative;
+        width: 80%;
+        margin: 10.938rem auto;
+        z-index: 3;
+
+        @media only screen and (max-width: 680px) {
+            width: 90%;
+        }
+    }
+
+    &-detail-decoration {
+        height: 2rem;
+        background-color: $color-primary;
+        margin-bottom: 4rem;
+        margin-left: -3.12rem;
+        margin-right: -3.15rem;
+        margin-top: 4rem;
+    }
+
+    &-detail-content {
+        padding-right: 30%;
+        @media only screen and (max-width: 680px) {
+            padding-right: 0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        img {
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
     }
 }
 
@@ -45,4 +98,16 @@ body, html {
             display: block;
         }
     }
+}
+
+.blog-detail-background {
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(34,40,49,1) 100%), var(--blog-detail-image);
+
 }
