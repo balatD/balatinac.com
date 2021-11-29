@@ -11,9 +11,11 @@ var BCard = function BCard() {
     var toggleButton = document.querySelector('.b-card-help span');
     var bCard = document.querySelector('.b-card-container');
 
-    toggleButton.onclick = function () {
-      bCard.classList.toggle('flip-toggle');
-    };
+    if (toggleButton !== undefined && toggleButton !== null) {
+      toggleButton.onclick = function () {
+        bCard.classList.toggle('flip-toggle');
+      };
+    }
   });
 
   this.bCardFlipAnimationToggle();
@@ -33,6 +35,24 @@ var EasterEgg = function EasterEgg() {
 
   this.consoleLogEaesterEgg();
 };
+"use strict";
+
+var swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar'
+  }
+});
 "use strict";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }

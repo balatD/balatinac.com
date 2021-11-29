@@ -29,25 +29,97 @@
 <body>
 
 <main class="blog-detail">
-        <div class="blog-detail-content">
-        </div>
-        <div class="blog-related-container">
+        <div class="blog-detail-background" style="--blog-detail-image: url('https://picsum.photos/1920/1080');"></div>
+
+        <div class="blog-detail-wrapper">
+            <div class="blog-detail-navigation">
+                <a href="/blog.html" class="blog-detail-navigation-link"><img src="Images/svg/left-arrow-back-svgrepo-com.svg"
+                                                                              alt="">back to blog overview</a>
+            </div>
+
+            <div class="blog-detail-container">
+                <div class="blog-intro">
+                    <p class="blog-intro-date">29.11.2021 by Dragan Balatinac</p>
+                    <h1 class="blog-intro-headline">Blog Test 1</h1>
+                </div>
+                <div class="blog-detail-decoration"></div>
+
+                <div class="blog-detail-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis earum esse, ipsa itaque
+                        molestiae nesciunt nobis non nulla perferendis quidem repellat temporibus, voluptas. At perspiciatis,
+                        quam. Aut autem dolorem doloremque, ducimus enim facilis hic inventore libero nihil non perferendis
+                        provident quae quas qui, quisquam ratione, reiciendis sapiente sit vero!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis earum esse, ipsa itaque
+                        molestiae nesciunt nobis non nulla perferendis quidem repellat temporibus, voluptas. At perspiciatis,
+                        quam. Aut autem dolorem doloremque, ducimus enim facilis hic inventore libero nihil non perferendis
+                        provident quae quas qui, quisquam ratione, reiciendis sapiente sit vero!</p>
+                    <div class="image-element">
+                        <img src="https://picsum.photos/1920/1081" alt="">
+                        <span class="image-element-caption">showcase #1: this that</span>
+                    </div>
+                    <h2>Subheader 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis earum esse, ipsa itaque
+                        molestiae <strong>nesciunt</strong> nobis non nulla perferendis quidem repellat temporibus, voluptas. At perspiciatis,
+                        quam. Aut autem dolorem doloremque, ducimus enim facilis hic inventore libero nihil non perferendis
+                        provident quae quas qui, quisquam ratione, reiciendis sapiente sit vero!</p>
+
+                    <ul>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                    </ul>
+
+                    <div class="code-highlight">
+                        <pre><code class="language-css">
+                    pre[class*=language-] {
+                    border-radius: 8px;
+                    margin-top: 2rem !important;
+                    margin-bottom: 2rem !important;
+                    }
+                        </code></pre>
+                    </div>
+
+                    <h2>Subheader 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis earum esse, ipsa itaque
+                        molestiae <strong>nesciunt</strong> nobis non nulla perferendis quidem repellat temporibus, voluptas. At perspiciatis,
+                        quam. Aut autem dolorem doloremque, ducimus enim facilis hic inventore libero nihil non perferendis
+                        provident quae quas qui, quisquam ratione, reiciendis sapiente sit vero!</p>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://picsum.photos/1920/1081" alt="">
+                                <span class="swiper-slide-caption">slide #1: test hehe</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://picsum.photos/1920/1082" alt="">
+                                <span class="swiper-slide-caption">slide #2: test hehe</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://picsum.photos/1920/1083" alt="">
+                                <span class="swiper-slide-caption">slide #3: test hehe</span>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-related-container">
+                <h4>Related Blog Posts</h4>
+            </div>
         </div>
 
     <footer>
-        <section class="footer-navigation">
-            <nav>
-                <ul>
-                    <li><a href="/imprint.html">imprint</a></li>
-                    <li>|</li>
-                    <li>privacy</li>
-                </ul>
-            </nav>
-        </section>
     </footer>
 </main>
 
 
+    <script src="JavaScript/bundle.js"></script>
     <script src="JavaScript/app.js"></script>
 
 </body>
