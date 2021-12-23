@@ -1,0 +1,19 @@
+tt_content.business_card >
+tt_content.business_card =< lib.contentElement
+tt_content.business_card {
+  templateName = BusinessCard
+
+  dataProcessing {
+    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    10 {
+      references.fieldName = image
+      as = techStackImages
+    }
+
+    20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    20 {
+      levels = 1
+      as = cardNavigation
+    }
+  }
+}

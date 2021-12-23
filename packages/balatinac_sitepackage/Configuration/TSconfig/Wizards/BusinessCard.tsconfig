@@ -1,0 +1,14 @@
+mod.wizards.newContentElement.wizardItems {
+  balatinac.elements {
+    business_card {
+      iconIdentifier = content-element
+      title = LLL:EXT:balatinac_sitepackage/Resources/Private/Language/locallang_be.xlf:content_element.business_card
+      description = LLL:EXT:balatinac_sitepackage/Resources/Private/Language/locallang_be.xlf:content_element.business_card-description
+      tt_content_defValues {
+        CType = business_card
+      }
+    }
+  }
+
+  balatinac.show := addToList(business_card)
+}

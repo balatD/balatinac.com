@@ -13,6 +13,16 @@
 				<source>Additional Content</source>
 			</trans-unit>
 
+			<trans-unit id="content_element.business_card">
+				<source>Business Card</source>
+			</trans-unit>
+			<trans-unit id="business_card.front_div">
+				<source>Front Face</source>
+			</trans-unit>
+			<trans-unit id="business_card.back_div">
+				<source>Back Face</source>
+			</trans-unit>
+
 			<trans-unit id="balatinac-wizard">
 				<source>balatinac.com Elements</source>
 			</trans-unit>

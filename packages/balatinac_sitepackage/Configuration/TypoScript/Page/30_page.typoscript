@@ -3,13 +3,6 @@ page {
   typeNum = 0
 
   shortcutIcon = {$resourcePublic}/Icons/favicon.ico
-
-  bodyTag >
-  bodyTagCObject = TEXT
-  bodyTagCObject {
-    field = uid
-    wrap = <bod<>
-  }
 }
 
 page.10 = FLUIDTEMPLATE

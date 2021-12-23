@@ -1,0 +1,61 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<section class="b-card-wrapper">
+    <div class="b-card-container">
+        <div class="b-card front">
+            <h1 class="name">{data.header}</h1>
+            <span class="job-description">{data.subheader}</span>
+            <div class="b-card-decoration"></div>
+
+            <div class="b-card-navigation">
+                <nav>
+                    <ul>
+                        <f:for each="{cardNavigation}" as="navigationItem">
+                            <li>
+                                <a href="{navigationItem.link}" target="{navigationItem.target}">
+                                    {navigationItem.title}
+                                </a>
+                            </li>
+                        </f:for>
+                        <li><a href="mailto:info@balatinac.com">Contact</a></li>
+                        <li>//</li>
+                        <f:for each="{metaCardNavigation}" as="navigationItem">
+                            <li>
+                                <a href="{navigationItem.link}" target="{navigationItem.target}">
+                                    {navigationItem.title}
+                                </a>
+                            </li>
+                        </f:for>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="b-card-additional-info">
+                <h3>{data.rowDescription}</h3>
+            </div>
+        </div>
+
+        <div class="b-card back">
+            <div class="b-card-decoration"></div>
+
+            <f:if condition="{data.bodytext}">
+                <div class="b-card-description">
+                    {data.bodytext -> f:format.raw()}
+                </div>
+            </f:if>
+
+            <div class="b-card-tech-stack">
+                <f:for each="{techStackImage}" as="image">
+                    <f:if condition="{image}">
+                        <div class="tech-item">
+                            <f:image image="{image}" alt="{image.alternative}"/>
+                        </div>
+                    </f:if>
+                </f:for>
+            </div>
+        </div>
+    </div>
+    <div class="b-card-help">
+        <span>click to turn around</span>
+    </div>
+</section>

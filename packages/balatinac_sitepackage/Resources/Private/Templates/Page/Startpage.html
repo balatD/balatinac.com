@@ -4,7 +4,11 @@
 
 <f:section name="Main">
 
-    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: data.uid, colPos: 0, slide: 0}" />
+    <main class="homepage">
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: data.uid, colPos: 1, slide: 0}" />
+
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: data.uid, colPos: 0, slide: 0}" />
+    </main>
 
 </f:section>
 
