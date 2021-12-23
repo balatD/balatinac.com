@@ -163,6 +163,15 @@ pre[class*=language-] {
   margin-top: 2rem !important;
   margin-bottom: 2rem !important; }
 
+@media only screen and (max-width: 680px) {
+  .code-highlight {
+    margin-left: -51px;
+    margin-right: -51px; }
+    .code-highlight pre[class*=language-] {
+      border-radius: 0;
+      margin-top: 2rem !important;
+      margin-bottom: 2rem !important; } }
+
 .navigation-subpage {
   margin-bottom: 1.75rem; }
   .navigation-subpage h1.navigation-subpage-header {
@@ -1269,8 +1278,21 @@ footer {
   padding-left: 25px;
   color: #00000099; }
 
+@media only screen and (max-width: 680px) {
+  .image-element {
+    margin-left: -50px;
+    margin-right: -50px; }
+    .image-element img {
+      border-radius: 0; } }
+
 .swiper {
   --swiper-theme-color: #ffd369; }
+  @media only screen and (max-width: 680px) {
+    .swiper {
+      margin-left: -50px;
+      margin-right: -50px; }
+      .swiper img {
+        border-radius: 0; } }
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: 50px; }
