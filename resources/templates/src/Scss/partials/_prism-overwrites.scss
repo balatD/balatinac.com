@@ -3,3 +3,16 @@ pre[class*=language-] {
     margin-top: 2rem !important;
     margin-bottom: 2rem !important;
 }
+
+.code-highlight {
+    @media only screen and (max-width: 680px) {
+        margin-left: -51px;
+        margin-right: -51px;
+
+        pre[class*=language-] {
+            border-radius: 0;
+            margin-top: 2rem !important;
+            margin-bottom: 2rem !important;
+        }
+    }
+}

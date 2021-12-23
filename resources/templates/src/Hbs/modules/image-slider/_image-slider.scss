@@ -1,5 +1,14 @@
 .swiper {
     --swiper-theme-color: #ffd369;
+
+    @media only screen and (max-width: 680px) {
+        margin-left: -50px;
+        margin-right: -50px;
+
+        img {
+            border-radius: 0;
+        }
+    }
 }
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 50px;
