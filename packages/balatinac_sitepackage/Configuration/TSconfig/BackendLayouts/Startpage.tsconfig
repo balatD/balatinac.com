@@ -1,0 +1,31 @@
+mod.web_layout.BackendLayouts {
+  balatinac_sitepackage_Startpage {
+    title = LLL:EXT:balatinac_sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.startpage
+    icon = EXT:balatinac_sitepackage/Resources/Public/Icons/Startpage.png
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 2
+        rows {
+          1 {
+            columns {
+              1 {
+                name = LLL:EXT:balatinac_sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.b-card
+                colPos = 1
+              }
+            }
+          }
+
+          2 {
+            columns {
+              1 {
+                name = LLL:EXT:balatinac_sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.content
+                colPos = 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

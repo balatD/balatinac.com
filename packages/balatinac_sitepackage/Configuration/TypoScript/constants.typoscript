@@ -1,0 +1,14 @@
+######################
+#### DEPENDENCIES ####
+######################
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript'
+
+styles {
+  templates {
+    layoutRootPath = EXT:balatinac_sitepackage/Resources/Private/Layouts/ContentElements/
+    partialRootPath = EXT:balatinac_sitepackage/Resources/Private/Partials/ContentElements/
+    templateRootPath = EXT:balatinac_sitepackage/Resources/Private/Templates/ContentElements/
+  }
+}
+
+resourcePublic = EXT:balatinac_sitepackage/Resources/Public

@@ -2,7 +2,7 @@ const babelConfig = {
   typescriptConfig: false,
   babelEsConfig: true,
   bundleJsConfig: true,
-  copyToSitePackageConfig: false,
+  copyToSitePackageConfig: true,
   copyVendorCssConfig: true,
   scssConfig: true,
   handlebarsConfig: true,

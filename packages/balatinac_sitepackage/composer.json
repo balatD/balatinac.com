@@ -1,0 +1,19 @@
+{
+	"name": "db/balatinac-sitepackage",
+	"description": "TYPO3 Sitepackage Extension for balatinac.com",
+	"license": "GPL-2.0-or-later",
+	"type": "typo3-cms-extension",
+	"version": "1.0.0",
+
+	"autoload": {
+		"psr-4": {
+			"Db\\BalatinacSitepackage\\": "Classes/"
+		}
+	},
+
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "balatinac_sitepackage"
+		}
+	}
+}

@@ -1,0 +1,5 @@
+#
+# TSconfig for balatinac_sitepackage
+#
+@import 'EXT:balatinac_sitepackage/Configuration/TSconfig/BackendLayouts/*.tsconfig'
+@import 'EXT:balatinac_sitepackage/Configuration/TSconfig/Wizards/*.tsconfig'

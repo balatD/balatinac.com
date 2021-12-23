@@ -1,0 +1,45 @@
+base: /
+baseVariants:
+  -
+    base: 'https://www.balatinac.com.dev.local/'
+    condition: 'applicationContext == "Development"'
+  -
+    base: 'https://staging.balatinac.com/'
+    condition: 'applicationContext == "Production/Staging"'
+  -
+    base: 'https://www.balatinac.com/'
+    condition: 'applicationContext == "Production"'
+errorHandling:
+  -
+    errorCode: 404
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=2'
+languages:
+  -
+    title: English
+    enabled: true
+    languageId: 0
+    base: /
+    websiteTitle: 'Dragan Balatinac'
+    typo3Language: default
+    locale: en_US.UTF-8
+    iso-639-1: de
+    navigationTitle: ''
+    hreflang: 'en-EN'
+    direction: ''
+    flag: global
+rootPageId: 1
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    default: .html
+    map:
+      .html: 0
+      sitemap.xml: 1533906435
+routes:
+  - route: robots.txt
+    type: staticText
+    content: |
+      User-agent: *
+      Disallow: /typo3/
+      Allow: /typo3/sysext/frontend/Resources/Public/*
